@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="NEUEat" />
+        <module name="Yummiest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="NEUEat" target="11" />
+      <module name="Yummiest" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="NEUEat" options="-parameters" />
+      <module name="Yummiest" options="-parameters" />
     </option>
   </component>
 </project>

@@ -8,10 +8,10 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.cs5500</groupId>
-	<artifactId>NEUEat</artifactId>
+	<groupId>com.novo</groupId>
+	<artifactId>Yummiest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>NEUEat</name>
+	<name>Yummiest</name>
 	<description>spring-react-mongo</description>
 
 	<properties>
