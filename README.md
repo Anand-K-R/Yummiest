@@ -14,6 +14,8 @@ This is a Food Deliver Application using Springboot + React + MongoDB
 ### MongoDB
 1. You can configure MongoDB in application.properties as per your requirement.
 ## API Documentation
-[RESTS APIs](https://documenter.getpostman.com/view/19285628/UVeJLkaB)
+1. [REST API Docs](https://documenter.getpostman.com/view/19285628/UVeJLkaB)
+2. [REST API Test ScreenShots](https://drive.google.com/drive/folders/1qxJvf-bIGjkvBeU2_89wdh_-Cs7HSwNH?usp=sharing)
+
 
 
