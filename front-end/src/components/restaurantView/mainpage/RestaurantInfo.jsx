@@ -74,14 +74,14 @@ class RestaurantInfo extends React.Component {
 
   render() {
     return this.state.information ? (
-      <Grid container justify="center">
+      <Grid container justify="center" style={{marginTop:"-150px"}}>
         <Grid item xs={5}>
           <div className="container">
             <FastfoodIcon className="icon"/>
-            <Typography component="h1" variant="h5">
+            <Typography component="h1" variant="h5" style={{color:"black"}}>
               Provide Your Restaurant Detail
             </Typography>
-            <Typography variant="body1" color="error">
+            <Typography variant="body1" color="red">
               {this.state.alert}
             </Typography>
             <form onSubmit={this.updateInformation}>

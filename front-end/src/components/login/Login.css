@@ -5,8 +5,13 @@
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 130px;
   text-align: center;
+  background-color: rgb(245 242 242 / 61%);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 280px;
 }
 
 .icon {
@@ -14,7 +19,7 @@
 }
 
 .link, .link:visited {
-  color: #1E90FF;
+  color: #157ce4;
 }
 
 .link:hover {
@@ -26,11 +31,14 @@
   background-image: url("https://img.wallpapersafari.com/desktop/1600/900/60/87/sRyDw7.jpg");
   background-repeat: no-repeat;
   width: 100vw;
-  height: 110vh;
+  height: 120vh;
+  
+  
 }
 .center{
-  margin-top:-10px;
+  /* margin-top:-10px; */
   display: flex;
-  justify-content: flex-end;
-  margin-right: 70px;
+  justify-content: center;
+  
+  /* margin-right: 70px; */
 }
