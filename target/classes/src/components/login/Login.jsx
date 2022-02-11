@@ -45,10 +45,9 @@ class Login extends React.Component {
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={7}>
-          <img className="image" alt="foodImage" src='https://i.pinimg.com/originals/b4/09/33/b40933bf361ec47c1835cae89398275d.jpg' />
-        </Grid>
+      <div className='login__page' >
+      <Grid >
+        <div className="center">
         <Grid item xs={5}>
           <div className="container">
             <FastfoodIcon className="icon"/>
@@ -98,12 +97,12 @@ class Login extends React.Component {
               </Button>
               <br/>
               <br/>
-              <Link to={"/register"} className="link">
+              <Link to={"/register"} style={{textDecoration: 'none'}} className="link">
                 Don't have an account? Sign Up
               </Link>
               <Box mt={5}>
                 <Typography variant="body2" color="textSecondary" align="center">
-                  {'Copyright © NEUEat '}
+                  {'Copyright © Yummiest '}
                   {new Date().getFullYear()}
                   {'.'}
                 </Typography>
@@ -111,7 +110,9 @@ class Login extends React.Component {
             </form>
           </div>
         </Grid>
+        </div>
       </Grid>
+      </div>
     );
   }
 }

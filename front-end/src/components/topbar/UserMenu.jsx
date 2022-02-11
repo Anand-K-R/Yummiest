@@ -165,7 +165,7 @@ class UserMenu extends React.Component {
       <Grid container>
         <IconButton edge="end" style={{color: "white"}} aria-label="menu" onClick={this.openMenu} >
           <SettingsIcon/>
-          <Typography variant="h5">My Account</Typography>
+          <Typography variant="h5" style={{marginLeft:"10px"}} >MyAccount</Typography>
         </IconButton>
         <Menu
           anchorEl={this.state.anchorEl}

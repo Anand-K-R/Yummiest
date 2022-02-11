@@ -12,24 +12,25 @@ class DriverBar extends React.Component {
   render() {
     return (
       <div>
-        <br />
-        <h3><b><i>Driver ToolBar</i></b></h3>
-        <br />
         <List component="nav">
-          <Link to={"/driver/home"} className="link">
-            <ListItem>
+        <ListItem button style={{background:"#29b6f6",color:"#006064",textAlign:"center",}}>
+              <ListItemText primary={"Driver ToolBar"} />
+            </ListItem>
+            <Divider />
+          <Link to={"/driver/home"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",textDecoration:"none"}}>
               <ListItemText primary={"All Pending Orders"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/driver/order"} className="link">
-            <ListItem>
+          <Link to={"/driver/order"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",textDecoration:"none"}}>
               <ListItemText primary={"My Active Order"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/driver/history"} className="link">
-            <ListItem>
+          <Link to={"/driver/history"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",textDecoration:"none"}}>
               <ListItemText primary={"My Order History"} />
             </ListItem>
             <Divider />

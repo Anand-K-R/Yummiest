@@ -78,7 +78,7 @@ class EmptyDish extends React.Component {
               margin="normal"
               required
               fullWidth
-              label="$ Dish Price"
+              label="Rs Dish Price"
               type="number"
               value={this.state.price}
               onChange={event => this.handleChange({price: event.target.value})}

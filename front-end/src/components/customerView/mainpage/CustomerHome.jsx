@@ -57,9 +57,9 @@ class CustomerHome extends React.Component {
       <div>
         <Grid container justify="center">
           <Grid item>
-            <Paper component="form" onSubmit={this.handleSearch} style={{width: 400, padding: '2px 4px', display: "spac"}} >
+            <Paper component="form" onSubmit={this.handleSearch} style={{width: "60vw", padding: '0px 2px',marginTop:-60}} >
               <InputBase
-                style={{marginLeft: '10px', width: 325}}
+                style={{marginLeft: '10px', width: "50vw"}}
                 placeholder="Search Restaurant or Food"
                 value={this.state.searchText}
                 onChange={event => this.handleChange({searchText: event.target.value})}
@@ -70,10 +70,10 @@ class CustomerHome extends React.Component {
             </Paper>
           </Grid>
           <Grid item xs={12}>
-            <div className="cardbody">
-              <Grid container justify="space-evenly" spacing={2}>
+            <div className="cardbody" style={{marginTop: '0px'}}>
+              <Grid container justify="space-evenly" spacing={2} >
                 {this.state.restaurants && this.state.restaurants.length !== 0 ? this.state.restaurants.map(restaurant => (
-                  <Grid item xs={5} key={restaurant.id}>
+                  <Grid item xs={3} key={restaurant.id}>
                     <RestaurantCard userId={this.props.currentUser.id} restaurantId={restaurant.id} restaurantInfo={restaurant.information} />
                   </Grid>
                 )) : <Typography variant="h5"><i>No result matches your search, please try again...</i></Typography>}

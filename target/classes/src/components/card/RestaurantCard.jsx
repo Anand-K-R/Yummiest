@@ -62,8 +62,12 @@ class RestaurantCard extends React.Component {
   render() {
     return this.props.userId && this.props.restaurantId && this.props.restaurantInfo && this.state.comments ? (
       <Card>
+        
+        <Link to={"/customer/restaurant/" + this.props.restaurantId} className="link">
+          <img className="photoCardImage" src= {this.props.restaurantInfo.imageUrl} alt={this.props.restaurantInfo.restaurantName} />
+        </Link>
         <CardHeader
-          style={{backgroundColor: "#FAFAD2", height: "40px"}}
+          style={{backgroundColor: "#FAFAD2", height: "20px"}}
           avatar={
             <Avatar aria-label="recipe" style={{backgroundColor: "#FF4500"}}>
               {this.props.restaurantInfo.restaurantName.substring(0, 1)}
@@ -71,17 +75,10 @@ class RestaurantCard extends React.Component {
           }
           action={
             this.props.restaurantInfo.open ? (<Typography color="primary">Open</Typography>) : <Typography color="secondary">Closed</Typography>}
-            titleTypographyProps={{variant:'h5'}}
+            titleTypographyProps={{variant:'h7'}}
             title={this.props.restaurantInfo.restaurantName}
         />
-        <Link to={"/customer/restaurant/" + this.props.restaurantId} className="link">
-          <img className="photoCardImage" src= {this.props.restaurantInfo.imageUrl} alt={this.props.restaurantInfo.restaurantName} />
-        </Link>
-        <CardContent style={{backgroundColor: "#e6f7ff"}}>
-          <Typography variant="body1" color="textSecondary" component="p">
-            <i>{this.props.restaurantInfo.description}</i>
-          </Typography>
-      </CardContent>
+        
       <IconButton
         onClick={this.handleExpandClick}
         aria-expanded={this.state.expanded}
@@ -90,6 +87,12 @@ class RestaurantCard extends React.Component {
         <ExpandMoreIcon />
       </IconButton>
       <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+
+      <CardContent style={{backgroundColor: "#e6f7ff"}}>
+          <Typography variant="body1" color="textSecondary" component="p">
+            <i>{this.props.restaurantInfo.description}</i>
+          </Typography>
+      </CardContent>
         <CardContent>
           {this.state.comments.length > 0 ? 
             <Grid container justify="center">

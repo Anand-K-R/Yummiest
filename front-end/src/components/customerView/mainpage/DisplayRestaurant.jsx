@@ -79,7 +79,7 @@ class DisplayRestaurant extends React.Component {
         <div className="checkoutBox">
           <Grid container justify="flex-end">
               <Grid item>
-                <Typography variant="h5"><i>Subtotal : $ {this.state.subtotal}</i></Typography>
+                <Typography variant="h5"><i>Subtotal : Rs {this.state.subtotal}</i></Typography>
               </Grid>
           </Grid>
           <br />

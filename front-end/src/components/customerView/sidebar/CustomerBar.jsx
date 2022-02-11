@@ -12,30 +12,31 @@ class CustomerBar extends React.Component {
   render() {
     return (
       <div>
-        <br />
-        <h3><b><i>Customer ToolBar</i></b></h3>
-        <br />
         <List component="nav">
-          <Link to={"/customer/home"} className="link">
-            <ListItem>
+        <ListItem button style={{background:"#29b6f6",color:"#006064", textAlign:"center"}}>
+              <ListItemText primary={"Customer ToolBar"} />
+            </ListItem>
+            <Divider />
+          <Link to={"/customer/home"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white"}}>
               <ListItemText primary={"Home Page"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/customer/cart"} className="link">
-            <ListItem>
+          <Link to={"/customer/cart"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white"}}>
               <ListItemText primary={"My Shopping Cart"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/customer/orders"} className="link">
-            <ListItem>
+          <Link to={"/customer/orders"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white"}}>
               <ListItemText primary={"My Active Orders"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/customer/history"} className="link">
-            <ListItem>
+          <Link to={"/customer/history"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white"}}>
               <ListItemText primary={"My Order History"} />
             </ListItem>
             <Divider />

@@ -12,36 +12,37 @@ class RestaurantBar extends React.Component {
   render() {
     return (
       <div>
-        <br />
-        <h3><b><i>Restaurant ToolBar</i></b></h3>
-        <br />
         <List component="nav">
-          <Link to={"/restaurant/home"} className="link">
-            <ListItem>
+        <ListItem button style={{background:"#29b6f6",color:"#006064",textAlign:"center",}}>
+              <ListItemText primary={"Restaurant ToolBar"} />
+            </ListItem>
+            <Divider />
+          <Link to={"/restaurant/home"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",}} >
               <ListItemText primary={"Home Page"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/restaurant/information"} className="link">
-            <ListItem>
+          <Link to={"/restaurant/information"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",}}>
               <ListItemText primary={"Restaurant Information"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/restaurant/menu"} className="link">
-            <ListItem>
+          <Link to={"/restaurant/menu"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",}}>
               <ListItemText primary={"Menu"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/restaurant/order"} className="link">
-            <ListItem>
+          <Link to={"/restaurant/order"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",}}>
               <ListItemText primary={"My Active Orders"} />
             </ListItem>
             <Divider />
           </Link>
-          <Link to={"/restaurant/history"} className="link">
-            <ListItem>
+          <Link to={"/restaurant/history"} style={{textDecoration: 'none'}} className="link">
+            <ListItem button style={{color:"white",}}>
               <ListItemText primary={"My Order History"} />
             </ListItem>
             <Divider />

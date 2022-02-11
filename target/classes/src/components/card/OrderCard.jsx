@@ -189,7 +189,7 @@ class OrderCard extends React.Component {
             <br />
             <Grid container direction="column" alignItems="flex-end" spacing={1}>
               <Grid item xs={12}>
-                <Typography variant="body1" color="primary"><i>Subtotal : $ {this.props.order.price}</i></Typography>
+                <Typography variant="body1" color="primary"><i>Subtotal : Rs {this.props.order.price}</i></Typography>
               </Grid>
               {this.props.userType === "driver" && !this.props.order.delivery ? 
                 <Grid item xs={12}>
