@@ -10,6 +10,6 @@ body{
 }
 .MuiGrid-grid-xs-5 {
   flex-grow: 0;
-   max-width: 100%;
+   max-width: 100% !important;
   flex-basis: 41.666667%;
 }
