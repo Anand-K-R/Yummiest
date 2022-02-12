@@ -1,10 +1,10 @@
 # Yummiest
 This is a Food Deliver Application using Springboot + React + MongoDB
-## Installation
 ## Pre requisites
 1. Nodejs
 2. Java
 3. MongoDB
+## Installation
 ### Frontend
 1. npm install
 2. npm start
