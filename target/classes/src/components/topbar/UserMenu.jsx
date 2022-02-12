@@ -163,10 +163,10 @@ class UserMenu extends React.Component {
   render() {
     return (
       <Grid container>
-        <IconButton edge="end" style={{color: "white"}} aria-label="menu" onClick={this.openMenu} >
-          <SettingsIcon/>
-          <Typography variant="h5" style={{marginLeft:"10px"}} >MyAccount</Typography>
-        </IconButton>
+        <Button edge="end" style={{color: "white",textTransform:"capitalize"}} aria-label="menu" onClick={this.openMenu} >
+          <SettingsIcon style={{color:"black"}}/>
+          <Typography  variant="h5" style={{color:"grey",fontSize:"bold",marginLeft:"10px"}} >MyAccount</Typography>
+        </Button>
         <Menu
           anchorEl={this.state.anchorEl}
           open={Boolean(this.state.anchorEl)}

@@ -60,11 +60,12 @@ class Main extends React.Component {
     return (
       <Router>
         <Grid container justify="flex-start">
-          <Grid item xs={12}>
-            <TopBar changeUser={this.changeUser} view={this.state.view} currentUser={this.state.currentUser} />
-          </Grid>
+          
           <Grid item xs={12}>
             <div className="grid-main">
+            <Grid item xs={12}>
+            <TopBar changeUser={this.changeUser} view={this.state.view} currentUser={this.state.currentUser} />
+          </Grid>
               <Switch>
                 {this.state.userType && this.state.userType === "customer" ? (
                   <Route path="/customer" render={props => <CustomerView {...props} currentUser={this.state.currentUser} changeView={this.changeView} />} />
