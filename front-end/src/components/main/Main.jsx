@@ -61,7 +61,7 @@ class Main extends React.Component {
       <Router>
         <Grid container justify="flex-start" >
           
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{backgroundImage: "url(https://background-tiles.com/overview/white/patterns/large/1025.png)"}}>
             <div className="grid-main">
             <Grid item xs={12}>
             <TopBar changeUser={this.changeUser} view={this.state.view} currentUser={this.state.currentUser} />
