@@ -71,7 +71,7 @@ class DisplayRestaurant extends React.Component {
         <br />
         <Grid container spacing={3} justify="space-evenly">
           {this.state.restaurant.menu.map((dish, index) => (
-            <Grid item xs={3} key={index}>
+            <Grid item xs={3} key={index} style={{minWidth:"270px"}}>
               <DishCard dish={dish} addDish={this.addDish} currentUser={this.props.currentUser} />
             </Grid>
           ))}
