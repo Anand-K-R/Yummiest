@@ -82,7 +82,7 @@ class Login extends React.Component {
               />
               <FormControl component="fieldset">
                 <FormLabel component="legend">Login as a </FormLabel>
-                <RadioGroup row aria-label="UserType" name="userType" value={this.state.userType} onChange={event => this.handleChange({userType: event.target.value})}>
+                <RadioGroup row aria-label="UserType" className="radioCustom" name="userType" value={this.state.userType} onChange={event => this.handleChange({userType: event.target.value})}>
                   <FormControlLabel value="customer" control={<Radio />} label="Customer" />
                   <FormControlLabel value="driver" control={<Radio />} label="Driver" />
                   <FormControlLabel value="restaurant" control={<Radio />} label="Restaurant" />

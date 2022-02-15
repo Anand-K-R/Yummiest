@@ -41,3 +41,11 @@
   
   /* margin-right: 70px; */
 }
+
+@media screen and (max-width: 480px) {
+.radioCustom{
+display:flex !important;
+  flex-direction:column !important;
+}
+}
+
