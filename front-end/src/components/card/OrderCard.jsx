@@ -168,7 +168,7 @@ class OrderCard extends React.Component {
   render() {
     return this.state.dict && this.state.restaurant && this.state.customer ? (
       <div>
-        <Card>
+        <Card >
           <Typography variant="body1" style={{position : "relative", backgroundColor: "#FAFAD2"}} >
             {this.props.userType === "customer" ? 
               <Link to={"/customer/restaurant/" + this.state.restaurant.id}>

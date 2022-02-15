@@ -188,7 +188,7 @@ class UserMenu extends React.Component {
           <MenuItem style={{color : "#1E90FF"}} onClick={this.openWarnDialog}>Drop My Account</MenuItem>
         </Menu>
         <Dialog open={this.state.warnOpen} onClose={this.closeWarn}>
-          <div className="dialog">
+          <div className="dialog" style={{padding:"20px"}}>
             <Typography variant="h6" color="error">Warn!!!</Typography>
             <Typography variant="h6">Do you want to drop your account?</Typography>
             <Typography color="textSecondary"><i>(This will erase your order information as well)</i></Typography>
@@ -208,7 +208,7 @@ class UserMenu extends React.Component {
           </div>
         </Dialog>
         <Dialog open={this.state.passwordDialogOpen} onClose={this.closePasswordDialog}>
-          <div className="dialog">
+          <div className="dialog" style={{padding:"20px"}} >
             <form onSubmit={this.resetPassword}>
               <Typography component="h1" variant="h5">
                 Reset Your Password
@@ -250,7 +250,7 @@ class UserMenu extends React.Component {
           </div>
         </Dialog>
         <Dialog open={this.state.phoneDialogOpen} onClose={this.closephoneDialog}>
-          <div className="dialog">
+          <div className="dialog" style={{padding:"20px"}}>
             <form onSubmit={this.resetPhone}>
               <Typography component="h1" variant="h5">
                 Reset Your Phone Number
@@ -279,7 +279,7 @@ class UserMenu extends React.Component {
           </div>
         </Dialog>
         <Dialog open={this.state.addressDialogOpen} onClose={this.closeAddressDialog}>
-          <div className="dialog">
+          <div className="dialog" style={{padding:"20px"}}>
             <form onSubmit={this.resetAddress}>
               <Typography component="h1" variant="h5">
                 Reset Your Address

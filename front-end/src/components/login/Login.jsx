@@ -45,11 +45,14 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className='login__page' >
+      <div className='login__page' style={{
+                                                           backgroundImage: `url("https://background-tiles.com/overview/white/patterns/large/1025.png")`, backgroundRepeat: 'repeat'
+                                                       }}>
+
       <Grid >
-        <div className="center">
+        <div className="center" >
         <Grid item xs={5}>
-          <div className="container">
+          <div className="container" style={{ backgroundColor : "white"}}>
             <FastfoodIcon className="icon"/>
             <Typography component="h1" variant="h5">
               Sign in

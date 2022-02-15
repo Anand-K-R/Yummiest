@@ -59,7 +59,7 @@ class Main extends React.Component {
   render() {
     return (
       <Router>
-        <Grid container justify="flex-start">
+        <Grid container justify="flex-start" >
           
           <Grid item xs={12}>
             <div className="grid-main">
