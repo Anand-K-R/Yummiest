@@ -77,7 +77,7 @@ class Register extends React.Component {
   render() {
     return (
       <Grid container justify="center">
-        <Grid item xs={6}>
+        <Grid item xs={6} style={{maxWidth:"100%"}}>
           <div className="container">
             <FastfoodIcon className="icon"/>
             <Typography component="h1" variant="h5">
