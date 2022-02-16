@@ -4,11 +4,22 @@
 }
 
 .littleImage {
-  width: 35px;
-  height: 35px;
+  width: 80px;
+  height: 80px;
   margin-right: 15px;
+    border-radius: 50%;
+}
+.welcome_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+    .welcome_header {
+        flex-direction: column;
+    }
+}
 .checkoutBox {
   margin-top: 100px;
   margin-right: 100px;
@@ -19,7 +30,7 @@
 
 
 .MuiGrid-justify-xs-space-between {
-    justify-content: space-evenly !important;
+    justify-content: space-between !important;
 }
 
  grid-main > .MuiGrid-container{
@@ -67,6 +78,10 @@
   justify-content: center;
   margin-top:60px;
   }
+
+    .MuiGrid-justify-xs-space-between {
+        justify-content: space-evenly !important;
+    }
 
 
 }

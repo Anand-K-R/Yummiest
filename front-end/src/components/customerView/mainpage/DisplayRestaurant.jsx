@@ -56,15 +56,17 @@ class DisplayRestaurant extends React.Component {
     return this.props.currentUser && this.state.restaurant ? (
       <div>
         <Typography variant="h4">
+            <div className="welcome_header">
         <img className="littleImage" src= {this.state.restaurant.information.imageUrl} alt={this.state.restaurant.information.restaurantName} />
-        <i><b>Welcome to {this.state.restaurant.information.restaurantName}</b></i>
+        <b>Welcome to {this.state.restaurant.information.restaurantName}</b>
+            </div>
         </Typography>
         {!this.state.restaurant.information.open ? (
           <Typography variant="body1" color="error">Closed, will go back soon...</Typography>
         ) : null}
         <br />
         <Typography variant="body1" color="textSecondary" component="p">
-          <i>{this.state.restaurant.information.description}</i>
+          {this.state.restaurant.information.description}
         </Typography>
         <br />
         <br />
@@ -79,7 +81,7 @@ class DisplayRestaurant extends React.Component {
         <div className="checkoutBox">
           <Grid container justify="flex-end">
               <Grid item>
-                <Typography variant="h5"><i>Subtotal : Rs {this.state.subtotal}</i></Typography>
+                <Typography variant="h5">Subtotal : ₹ {this.state.subtotal}</Typography>
               </Grid>
           </Grid>
           <br />

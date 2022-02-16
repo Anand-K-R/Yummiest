@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
@@ -73,7 +73,7 @@ class CustomerHome extends React.Component {
             <div className="cardbody" style={{marginTop: '0px'}}>
               <Grid container justify="space-evenly" spacing={2} >
                 {this.state.restaurants && this.state.restaurants.length !== 0 ? this.state.restaurants.map(restaurant => (
-                  <Grid item xs={3} key={restaurant.id}>
+                  <Grid item xs={3} key={restaurant.id} >
                     <RestaurantCard userId={this.props.currentUser.id} restaurantId={restaurant.id} restaurantInfo={restaurant.information} />
                   </Grid>
                 )) : <Typography variant="h5"><i>No result matches your search, please try again...</i></Typography>}

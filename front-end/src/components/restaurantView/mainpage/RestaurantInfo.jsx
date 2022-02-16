@@ -76,7 +76,7 @@ class RestaurantInfo extends React.Component {
     return this.state.information ? (
       <Grid container justify="center" style={{marginTop:"-150px"}}>
         <Grid item xs={5}>
-          <div className="container">
+          <div className="container" style={{marginTop:"100px"}} >
             <FastfoodIcon className="icon"/>
             <Typography component="h1" variant="h5" style={{color:"black"}}>
               Provide Your Restaurant Detail

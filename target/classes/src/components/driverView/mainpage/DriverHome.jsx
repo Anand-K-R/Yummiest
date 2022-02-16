@@ -26,11 +26,11 @@ class DriverHome extends React.Component {
 
   render() {
     return this.props.currentUser && this.state.orders ? (
-      <div>
-        <Grid container justify="space-evenly" spacing={3}>
+      <div >
+        <Grid container justify="space-evenly" spacing={3} >
           {this.state.orders.length > 0 ? this.state.orders.map(order => (
-            <Grid item key={order.id} xs={5}>
-              <OrderCard order={order} userType={this.props.currentUser.type} getOrders={this.getPendingOrders} />
+            <Grid item key={order.id} xs={5} style={{minWidth:"270px"}} >
+              <OrderCard order={order} userType={this.props.currentUser.type} getOrders={this.getPendingOrders}  />
             </Grid>
           )) : <Typography variant="h5"><i>There is no available order...</i></Typography>}
         </Grid>

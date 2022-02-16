@@ -32,12 +32,12 @@ class RestaurantMenu extends React.Component {
       <Grid container spacing={3} justify="space-evenly">
         {this.state.menu ? 
           (this.state.menu.map((dish, index) => (
-            <Grid item xs={3} key={index}>
+            <Grid item xs={3} key={index} style={{minWidth:"270px"}}>
               <DishCard dish={dish} getAllDishes={this.getAllDishes} currentUser={this.props.currentUser} />
             </Grid>
           ))) : null
         }
-        <Grid item xs={3}>
+        <Grid item xs={3} style={{minWidth:"270px"}}>
           <EmptyDish getAllDishes={this.getAllDishes} currentUser={this.props.currentUser} />
         </Grid>
       </Grid>

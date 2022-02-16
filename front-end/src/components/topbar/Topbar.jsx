@@ -60,13 +60,14 @@ class Topbar extends React.Component {
               <Grid item>
                                 <div style={{display:"flex",alignItems:"center",}}>
                                 <Avatar aria-label="recipe" style={{backgroundColor: "#FF4500",marginRight:"5px"}}>
-                                   {this.props.currentUser.userName.substring(0, 1)}
+                                   {this.props.currentUser.userName.substring(0, 1).toUpperCase()}
                                 </Avatar>
                               <Typography
                                 variant="h5"
                                 style={{ color: "grey", fontSize: "bold" }}
                               >
-                                {this.props.currentUser.userName}
+                                {this.props.currentUser.userName.charAt(0).toUpperCase() + this.props.currentUser.userName.slice(1)}
+
                               </Typography>
                                 </div>
                             </Grid>

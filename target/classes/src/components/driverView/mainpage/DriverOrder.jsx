@@ -26,9 +26,9 @@ class DriverOrder extends React.Component {
 
   render() {
     return this.props.currentUser && this.state.order ? (
-      <div>
-        <Grid container justify="space-evenly" spacing={3}>
-          <Grid item xs={5}>
+      <div >
+        <Grid container justify="space-evenly" spacing={3} >
+          <Grid item xs={5} style={{minWidth:"270px"}} >
             <OrderCard order={this.state.order} userType={this.props.currentUser.type} getOrders={this.getActiveOrder} />
           </Grid>
         </Grid>

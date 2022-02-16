@@ -169,13 +169,17 @@ class OrderCard extends React.Component {
     return this.state.dict && this.state.restaurant && this.state.customer ? (
       <div>
         <Card >
-          <Typography variant="body1" style={{position : "relative", backgroundColor: "#FAFAD2"}} >
-            {this.props.userType === "customer" ? 
+          <Typography variant="body1" style={{position : "relative", backgroundColor: "#ddeaf6"}} >
+            {this.props.userType === "customer" ?
               <Link to={"/customer/restaurant/" + this.state.restaurant.id}>
                 <img className="orderCardImage" src= {this.state.restaurant.information.imageUrl} alt={this.state.restaurant.information.restaurantName} />
               </Link> : null
             }
-            <i><b>Order from {this.state.restaurant.information.restaurantName}</b></i>
+
+             <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+               <b >Order from {this.state.restaurant.information.restaurantName}</b>
+
+             </div>
             {this.props.userType === "customer" && !this.props.order.delivery ? (
               <IconButton size="small" style={{position : "absolute", right : "0"}} onClick={this.deleteOrder}>
                 <ClearIcon />
@@ -184,12 +188,12 @@ class OrderCard extends React.Component {
           </Typography>
           <Divider />
           <CardContent>
-            {Object.keys(this.state.dict).map(key => <Typography variant="body1" color="textSecondary" component="p" key={key}><i>{key}</i> ... x {this.state.dict[key]}</Typography>)}
+            {Object.keys(this.state.dict).map(key => <Typography variant="body1" color="textSecondary" component="p" key={key}>{key} ... x {this.state.dict[key]}</Typography>)}
             <Divider />
             <br />
             <Grid container direction="column" alignItems="flex-end" spacing={1}>
               <Grid item xs={12}>
-                <Typography variant="body1" color="primary"><i>Subtotal : Rs {this.props.order.price}</i></Typography>
+                <Typography variant="body1" color="primary">Subtotal : ₹ {this.props.order.price}</Typography>
               </Grid>
               {this.props.userType === "driver" && !this.props.order.delivery ? 
                 <Grid item xs={12}>

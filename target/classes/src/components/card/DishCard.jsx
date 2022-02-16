@@ -1,8 +1,8 @@
 import React from 'react';
+
 import {
   Typography,
   Card,
-  CardHeader,
   IconButton,
   CardActions,
   Grid
@@ -14,6 +14,7 @@ import "./Card.css";
 const axios = require('axios').default;
 
 class DishCard extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -47,33 +48,33 @@ class DishCard extends React.Component {
 
   render() {
     return this.props.dish && this.props.currentUser ? (
-      <Card>
-        
-        <img className="dishCardImage" src= {this.props.dish.imageUrl} alt={this.props.dish.dishName} />
-        <CardHeader
-          style={{backgroundColor: "#FAFAD2", height: "10px"}}
-          titleTypographyProps={{variant:'body1'}}
-          title={this.props.dish.dishName}
-          subheader={"Rs " + this.props.dish.price}
-        />
-        <CardActions style={{backgroundColor: "#FAFAD2",height: "12px"}}>
-          {this.props.currentUser.type !== "restaurant" ?
-          <Grid container justify="center" alignItems="center">
-            <IconButton disabled={this.state.number === 0} onClick={this.handleMinus}>
-              <RemoveIcon />
-            </IconButton>
-            <Typography variant="h6">{this.state.number}</Typography>
-            <IconButton onClick={this.handleAdd}>
-              <AddIcon />
-            </IconButton>
-          </Grid> : 
-          <Grid container justify="center" alignItems="center">
-            <IconButton onClick={this.removeDish}>
-              <DeleteIcon />
-            </IconButton>
-          </Grid>
-          }
-        </CardActions>
+      <Card >
+        <img className="dishCardImage" style={{objectFit:"cover"}} src= {this.props.dish.imageUrl} alt={this.props.dish.dishName} />
+
+        <div>
+          <div className="dish_Details">
+            <Typography variant="h5">{this.props.dish.dishName}</Typography>
+            <Typography variant="h6">{"₹ " + this.props.dish.price}</Typography>
+          </div>
+          <CardActions style={{backgroundColor: "#649ed838",height: "12px",padding:"15px"}}>
+            {this.props.currentUser.type !== "restaurant" ?
+                <Grid container justify="space-evenly" alignItems="center">
+                  <IconButton disabled={this.state.number === 0} onClick={this.handleMinus}>
+                    <RemoveIcon />
+                  </IconButton>
+                  <Typography variant="h6">{this.state.number}</Typography>
+                  <IconButton onClick={this.handleAdd}>
+                    <AddIcon />
+                  </IconButton>
+                </Grid> :
+                <Grid container justify="center" alignItems="center">
+                  <IconButton onClick={this.removeDish}>
+                    <DeleteIcon />
+                  </IconButton>
+                </Grid>
+            }
+          </CardActions>
+        </div>
       </Card>
     ) : <div />;
   }

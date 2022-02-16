@@ -38,7 +38,7 @@ class ShopCart extends React.Component {
       <div>
         <Grid container justify="space-evenly" spacing={3}>
           {this.state.orders.length > 0 ? this.state.orders.map(order => (
-            <Grid item key={order.id} xs={5}>
+            <Grid item key={order.id} xs={5} style={{minWidth:"270px"}}>
               <OrderCard order={order} userType={this.props.currentUser.type} getOrders={this.getCartOrders} />
             </Grid>
           )) : <Typography variant="h5"><i>Your Shopping Cart is Empty...</i></Typography>}

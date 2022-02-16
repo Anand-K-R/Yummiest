@@ -1,6 +1,7 @@
 .topbar {
   height: 40;
   justify-content: 'center';
+
 }
 
 .dialog {
@@ -15,4 +16,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }

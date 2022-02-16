@@ -1,20 +1,54 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Playfair+Display:wght@600&display=swap');
 .dishCardImage {
   width: 100%;
   height: 150px;
 }
 
 .orderCardImage {
-  width : 20px;
-  height: 20px;
-  margin-right: 10px;
-  margin-top: 2px;
+  width : 40px;
+  height: 40px;
+  margin-left: 0px;
+  margin-top: 5px;
+    border-radius: 50%;
 }
 
 .photoCardImage {
-  width: 100%;
-  height: 150px;
+    width: 100%;
+    height: 130px;
+    /*border-radius: 10px;*/
+    padding-top: 10px;
+    object-fit: cover;
+}
+.dish_Details{
+    display:flex;
+    justify-content:space-between;
+    padding-left:10px;
+    padding-right:10px;
+    color:gray;
+    /*background-color: #157ce4;*/
+}
+
+.dish_Details > h6 {
+    font-family: 'Manrope', sans-serif !important;
+
 }
 
 .photoCardImage:hover {
   box-shadow: 0 0 0px 0px rgba(0, 140, 186, 0.5);
+}
+
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+    min-width: 230px;
+}
+
+.MuiCardHeader-action {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    margin-top: -1px !important;
+    margin-left: 6px !important;
+    background: floralwhite;
+    padding: 1px !important;
 }

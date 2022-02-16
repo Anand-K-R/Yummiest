@@ -4,12 +4,84 @@
 }
 
 .littleImage {
-  width: 35px;
-  height: 35px;
+  width: 80px;
+  height: 80px;
   margin-right: 15px;
+    border-radius: 50%;
+}
+.welcome_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+    .welcome_header {
+        flex-direction: column;
+    }
+}
 .checkoutBox {
   margin-top: 100px;
   margin-right: 100px;
+}
+ .grid-main{
+ margin-top:35px !important;
+ }
+
+
+.MuiGrid-justify-xs-space-between {
+    justify-content: space-between !important;
+}
+
+ grid-main > .MuiGrid-container{
+ justify-content: center;
+     padding: 0 !important;
+     margin-top: 0%;
+ }
+
+
+
+
+
+@media screen and (max-width: 480px) {
+.MuiGrid-justify-xs-space-between > *
+   {
+
+    justify-content: center !important;
+    margin-top:3px !important;
+  }
+
+ grid-main > .MuiGrid-container{
+ justify-content: center;
+     padding: 0 !important;
+     margin-top: 20%;
+ }
+
+ .cardbody{
+ padding:0px;
+ }
+
+ .MuiGrid-item {
+     margin: 0;
+     box-sizing: border-box;
+     margin-top: 20px !important;
+ }
+
+  .MuiGrid-root > .MuiIconButton-root{
+  padding:0 !important}
+
+  form.MuiPaper-root{
+  width:70vw !important;
+  }
+
+  .MuiGrid-item + .MuiGrid-container{
+  justify-content: center;
+  margin-top:60px;
+  }
+
+    .MuiGrid-justify-xs-space-between {
+        justify-content: space-evenly !important;
+    }
+
+
 }
