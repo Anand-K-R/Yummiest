@@ -7,11 +7,12 @@
 }
 
 .orderCardImage {
-  width : 40px;
-  height: 40px;
+  width : 60px;
+  height: 60px;
   margin-left: 0px;
   margin-top: 5px;
     border-radius: 50%;
+    object-fit:cover;
 }
 
 .photoCardImage {
